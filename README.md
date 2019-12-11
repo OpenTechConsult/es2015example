@@ -47,3 +47,9 @@ We start by setting up this new Node project and install the necessary dependenc
 > npm init -y
 > npm install --save-dev babel-cli babel-preset-es2015
 > echo { "presets": ["es2015"] } > .babelrc
+
+#### include the custom 'babel'  script
+
+Next we insert the custom `babel` property under the _script_ in package.json file . This will run the script that has been installed in the ./node_module/bin folder
+
+We create a file called browser.js in the ES2015 syntax.

@@ -4,6 +4,7 @@
   "description": "Hi! This repository is a sandbox for learning how to use [node.js](https://nodejs.org/en/) as front-end build system. Node.js is no more only use by server-side or back-end JavaScript developer. Node.js is nowadays used quite a lot by front-end developers.",
   "main": "index.js",
   "scripts": {
+    "babel": "./node_modules/.bin/babel browser.js -d build/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
