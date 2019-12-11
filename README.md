@@ -40,5 +40,10 @@ But a lot of tasks that we may want to define will not fit into the npm predefin
 The **`npm run`** command alias of npm _run-script_ is used to define arbitrary scripts invoked with :
 > npm run script-name
 
-Let see how to make on building client side-script with Babel
+Let see how to make on building client side-script with Babel.
 
+We start by setting up this new Node project and install the necessary dependencies
+
+> npm init -y
+> npm install --save-dev babel-cli babel-preset-es2015
+> echo { "presets": ["es2015"] } > .babelrc

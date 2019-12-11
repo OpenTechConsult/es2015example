@@ -1,0 +1,28 @@
+{
+  "name": "es2015example",
+  "version": "1.0.0",
+  "description": "Hi! This repository is a sandbox for learning how to use [node.js](https://nodejs.org/en/) as front-end build system. Node.js is no more only use by server-side or back-end JavaScript developer. Node.js is nowadays used quite a lot by front-end developers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenTechConsult/es2015example.git"
+  },
+  "keywords": [
+    "Front-end",
+    "build systems",
+    "npm scripts"
+  ],
+  "author": "OpenTech-Consult",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OpenTechConsult/es2015example/issues"
+  },
+  "homepage": "https://github.com/OpenTechConsult/es2015example#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
