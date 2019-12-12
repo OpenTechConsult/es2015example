@@ -53,3 +53,20 @@ We start by setting up this new Node project and install the necessary dependenc
 Next we insert the custom `babel` property under the _script_ in package.json file . This will run the script that has been installed in the ./node_module/bin folder
 
 We create a file called browser.js in the ES2015 syntax.
+
+### Go deep into npm script customization
+
+If all our project custom script does is to transpile the browser.js file in to ES5, we can change the name of **babel** to **build** in the package.json
+But let's go further by installing UglifyJS as well. Let's install UglifyJS :
+
+> npm i --save-dev uglify-es
+
+Uglifly can be invoked by using `node_modules/.bin/uglifyjs` so we need to add it to the package.json under _scripts_ with the name uglify like this
+
+> ./node_modules/.bin/uglifyjs build/browser.js -o build/browser.min.js
+
+We should now be able to invoke `npm run uglify`
+
+But we can tie all of this together by combining both of these scripts. To do that, let's add another script property called **`build`** that invokes both tasks
+
+> "build": "npm run babel && npm run uglify"
