@@ -70,3 +70,7 @@ We should now be able to invoke `npm run uglify`
 But we can tie all of this together by combining both of these scripts. To do that, let's add another script property called **`build`** that invokes both tasks
 
 > "build": "npm run babel && npm run uglify"
+
+We can then run both task (commands) with :
+
+> npm run build.
